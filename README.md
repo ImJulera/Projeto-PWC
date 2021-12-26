@@ -7,9 +7,9 @@ Neste projeto no âmbito da disciplina de Análise e Projeto de Sistemas de Info
 Desenvolvido por:
 
 Diogo Gonçalo Varela Júlio
-<br>
+<br><br>
 Diogo Silva Gonçalves 
-<br>
+<br><br>
 Luís Carlos Canelas Ferreira
 
 ##
