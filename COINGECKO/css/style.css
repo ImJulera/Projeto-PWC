@@ -1,0 +1,66 @@
+#title {
+    font-weight: bold;
+    font-size: 40;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.coinsList{
+    color: white;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.coinRANK{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.coin-image{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.coin-info{
+    display: inline-block;
+}
+
+#coinIMG{
+    max-width: 50px;
+    max-height: 50px;
+
+}
+
+.coin{
+    padding: 25px;
+}
+
+.coinData {
+    margin-left: 60px;
+}
+
+span{
+    max-width: 50px;
+}
+
+.searchBar{
+    text-align: center;
+}
+
+#search{
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+#btnSearch{
+    margin-top: 20px;
+}
+
+.btn-favorite{
+    display: inline-block;
+    background-image: url('../img/favorite-icon.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
