@@ -64,3 +64,29 @@ span{
     width: 20px;
     height: 20px;
 }
+
+.btn-image{
+    background-color: transparent;
+    border: 0;
+}
+
+.coinLOGO-container{
+    padding: 50px;
+    text-align: center;
+}
+
+#coinLOGO{
+    max-width: 300px;
+    max-height: 300px;
+    
+}
+
+.coin-panel-details{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.coinDetails{
+    float: middle;
+}
