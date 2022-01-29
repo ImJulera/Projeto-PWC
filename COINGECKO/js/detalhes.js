@@ -18,8 +18,10 @@ $(document).ready(function(){
                     $('#coinLOGO').attr('src' ,result.image);
 					$('.coin-Name').text(result.name);
 					$('.coin-Rank').text(result.market_cap_rank);
-					$('.coin-ValorAtual').text(result.current_price);
-					$('.coin-Preco24h').text(result.price_change_24h);
+					$('.coin-ValorAtual').text(result.current_price + "€"); 
+					$('.coin-Preco24h').text(result.price_change_24h + "€");
+					$('.coin-High24h').text(result.high_24h + "€");
+					$('.coin-Low24h').text(result.low_24h + "€");
                     $('.coin-UpdateData').text(result.last_updated);
                 }
 
