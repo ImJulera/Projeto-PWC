@@ -20,7 +20,7 @@ $(document).ready(function(){
 					$('.coin-Rank').text(result.market_cap_rank);
 					$('.coin-ValorAtual').text(result.current_price);
 					$('.coin-Preco24h').text(result.price_change_24h);
-                    
+                    $('.coin-UpdateData').text(result.last_updated);
                 }
 
 			})
