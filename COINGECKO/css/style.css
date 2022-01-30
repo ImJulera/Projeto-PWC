@@ -57,10 +57,7 @@ span{
     margin-top: 20px;
 }
 
-.btn-favorite{
-    display: inline-block;
-    background-image: url('../img/favorite-icon.png');
-    background-repeat: no-repeat;
+.checkbox-favoritos{
     width: 20px;
     height: 20px;
 }

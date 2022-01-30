@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-    var detalhesCOIN = localStorage.getItem('coinNAME');
+    var detalhesCOIN = localStorage.getItem('detailsCoinName');
     
 
 	$.ajax({
