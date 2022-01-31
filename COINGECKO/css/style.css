@@ -43,10 +43,10 @@ span{
     max-width: 50px;
 }
 
-.checkbox-favoritos{
+/*.checkbox-favoritos{
     width: 20px;
     height: 20px;
-}
+}*/
 
 .btn-image{
     background-color: transparent;
@@ -141,3 +141,30 @@ span{
 .searchSuggestions li:hover{
     background: #efefef;
 }
+
+.checkbox-favoritos{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: #464646;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.checkbox-favoritos::after{
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f005";
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+
+.checkbox-favoritos:checked::after{
+    display: block;
+}
+
+
