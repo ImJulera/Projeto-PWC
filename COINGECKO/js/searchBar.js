@@ -41,6 +41,7 @@ $(document).ready(function() {
 		}
 	}
 
+
 	function select(element)
 	{
 		let selectUserData = element.textContent;
@@ -62,4 +63,6 @@ $(document).ready(function() {
 		}
 		suggBox.innerHTML = listData;
 	}
+
+	
 })
