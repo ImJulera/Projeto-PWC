@@ -61,28 +61,39 @@
                             <div class="searchSuggestions">
                                 
                             </div>
-                            <div class="SearchBtn">
-                                <button type="button" id="btnSearch">Procurar</button>
-                            </div>
+                            <div class="icon"><i class="fas fa-search"></i></div>
                         </div>
                     </div>
-                    <ul class="coinsList">
-                        <li class="coin">
-                            <input type="checkbox" class="checkbox-favoritos">
-                            <span class="coinRANK coinData" style="color: white;"></span>    
-                            <div class="coin-image">
-                                <button class='btn-image'>
-                                    <img class="media-coin" id="coinIMG">
-                                </button>
-                            </div>
-                            <div class="coin-info">
-                                <p>
-                                    <span class="coinNAME coinData" style="color: white;"></span>
-                                    <span class="coinPRICE coinData" style="color: white;"></span>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="coinsHead">
+                        <label class="idHead" style="color: white;">#</label>
+                        <label class="nomeHead" style="color: white;">Nome</label>
+                        <label class="simboloHead" style="color: white;">Simbolo</label>
+                        <label class="precoHead" style="color: white;">Preço</label>
+                        <label class="marketcapHead" style="color: white;">Market Cap</label>
+                        <label class="moedasHead" style="color: white;">Moedas em Circulação</label>
+                    </div>
+                    <div class="container" >
+                        <ul class="coinsList">
+                            <li class="coin">
+                                <input type="checkbox" class="checkbox-favoritos">
+                                <span class="coinRANK" style="color: white;"></span>    
+                                <div class="coin-image">
+                                    <button class='btn-image'>
+                                        <img class="media-coin" id="coinIMG">
+                                    </button>
+                                </div>
+                                <div class="coin-info">
+                                    <p>
+                                        <span class="coinNAME" style="color: white;"></span>
+                                        <span class="coinSYMBOL coinData" style="color:white;"></span>
+                                        <span class="coinPRICE coinData" style="color: white;"></span>
+                                        <span class="coinMARKETCAP coinData" style="color: white;"></span>
+                                        <span class="coinCURRENTSUPPLY coinData" style="color:white"></span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </MAIN>

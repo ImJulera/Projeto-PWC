@@ -1,19 +1,24 @@
 #title {
     font-weight: bold;
-    font-size: 40;
+    font-size: 45px;
     margin-left: 10px;
     margin-top: 10px;
+    vertical-align: middle;
+}
+
+.coins-Panel{
+    margin-top: 30px;
 }
 
 .coinsList{
     color: white;
     list-style-type: none;
-    margin-top: 30px;
+    margin-top: 1px;
 }
 
 .coinRANK{
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 .coin-image{
@@ -22,41 +27,51 @@
 }
 
 .coin-info{
-    display: inline-block;
+    display: inline-block;    
 }
 
 #coinIMG{
     max-width: 50px;
     max-height: 50px;
-
 }
 
 .coin{
     padding: 25px;
 }
 
-.coinData {
-    margin-left: 60px;
+span.coinNAME{
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+span.coinSYMBOL{
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+span.coinData{
+    display: inline-block;
+    margin-left: 125px;
 }
 
 span{
+    display: inline-block;
+    width: 100px;
+    margin-left: 25px;
     max-width: 50px;
+    vertical-align: middle;
 }
 
-/*.checkbox-favoritos{
-    width: 20px;
-    height: 20px;
-}*/
+.coinPRICE{
+    margin-left: 300px;
+}
 
 .btn-image{
     background-color: transparent;
     border: 0;
 }
 
-.coinLOGO-container{
-    padding: 50px;
-    text-align: center;
-}
 
 #coinLOGO{
     max-width: 300px;
@@ -71,7 +86,9 @@ span{
 }
 
 .coinDetails{
-    float: middle;
+    display: flex;
+    vertical-align: middle;
+    margin: 0 auto;
 }
 
 .searchBar{
@@ -98,7 +115,7 @@ span{
     box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
 }
 
-.searchInput .SearchBtn{
+.searchInput .icon{
     height: 55px;
     width: 55px;
     line-height: 55px;
@@ -152,6 +169,8 @@ span{
     cursor: pointer;
     display: inline-block;
     text-align: center;
+    vertical-align: middle;
+    
 }
 
 .checkbox-favoritos::after{
@@ -166,5 +185,82 @@ span{
 .checkbox-favoritos:checked::after{
     display: block;
 }
+
+.coinsHead{
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: 240px;
+    margin-top: 50px;
+}
+
+.idHead{
+    margin-left: 115px;
+    font-size: 20px;
+}
+
+.nomeHead{
+    margin-left: 205px;
+    font-size: 20px;
+}
+
+.simboloHead{
+    margin-left: 96px;
+    font-size: 20px;
+}
+
+.precoHead{
+    margin-left: 130px;
+    font-size: 20px;
+}
+
+.marketcapHead{
+    margin-left: 110px;
+    font-size: 20px;
+}
+
+.moedasHead{
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.errorFavoritos{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.errorMessage{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.coinLOGO-container{
+    float: left;
+    margin-right: 50px;
+}
+
+.coin-panel-details{
+    margin-top: 5px;
+    margin-left: 50px;
+    width: auto;
+}
+
+.details-container{
+    max-width: 60%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 60px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: white;
+    padding: 20px;
+    height: 325px;
+}
+
 
 

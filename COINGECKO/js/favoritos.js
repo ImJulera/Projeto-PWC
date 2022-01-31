@@ -20,10 +20,20 @@ $(document).ready(function(){
 	}
 
 
+
 	$.ajax({
 		method: "GET",
 		url: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h" 	
 	}).done(function(res){
+
+            if(arrayFav.length > 0)
+            {
+                $('.emptyFavoritos').hide();
+            }
+            else
+            {
+                $('.coinsHead').hide();
+            }
 
 			$.each(res, function(index ,result){
 
@@ -49,7 +59,10 @@ $(document).ready(function(){
                         $('.coinRANK', liCoin).text(result.market_cap_rank);
                         $('#coinIMG', liCoin).attr('src' ,result.image);
                         $('.coinNAME', liCoin).text(result.name);
+                        $('.coinSYMBOL', liCoin).text('(' + (result.symbol).toUpperCase() + ')');
                         $('.coinPRICE', liCoin).text(result.current_price + '$');
+                        $('.coinMARKETCAP', liCoin).text(result.market_cap_change_percentage_24h + '%');
+                        $('.coinCURRENTSUPPLY', liCoin).text(result.circulating_supply); 
                         $('.btn-image', liCoin).click(function(){
                             localStorage.setItem('detailsCoinName', result.name);
                             window.location.href='detalhes.html';
@@ -100,7 +113,7 @@ $(document).ready(function(){
                 }   
 			})
 
-            $('#btnSearch').on('click', function() {
+            $('.icon').on('click', function() {
 
 				var valuePesquisa = $('#search').val();
 		
@@ -140,7 +153,10 @@ $(document).ready(function(){
                                     $('.coinRANK', liCoin).text(result.market_cap_rank);
                                     $('#coinIMG', liCoin).attr('src' ,result.image);
                                     $('.coinNAME', liCoin).text(result.name);
+                                    $('.coinSYMBOL', liCoin).text('(' + (result.symbol).toUpperCase() + ')');
                                     $('.coinPRICE', liCoin).text(result.current_price + '$');
+                                    $('.coinMARKETCAP', liCoin).text(result.market_cap_change_percentage_24h + '%');
+                                    $('.coinCURRENTSUPPLY', liCoin).text(result.circulating_supply); 
                                     $('.btn-image', liCoin).click(function(){
                                         localStorage.setItem('detailsCoinName', result.name);
                                         window.location.href='detalhes.html';
